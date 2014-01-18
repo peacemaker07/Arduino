@@ -1,3 +1,7 @@
+/*
+  7SEGの数字表示を簡略化
+*/
+
 // pinを宣言
 const int anode_pin01 = 2;
 const int anode_pin02 = 3;

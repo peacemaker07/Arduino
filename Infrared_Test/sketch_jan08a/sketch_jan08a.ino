@@ -1,3 +1,8 @@
+/*
+  赤外線【未完成。。。】
+  http://eikatou.net/blog/2012/07/arduino-remocon/
+*/
+
 #define READ_PIN   7
 #define LOW_STATE  0
 #define HIGH_STATE 1

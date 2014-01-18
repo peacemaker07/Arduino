@@ -1,3 +1,7 @@
+/*
+  ボタンを押している時だけ、LEDが点灯
+*/
+
 #define LED_PIN 13
 #define BUTTON  2
 

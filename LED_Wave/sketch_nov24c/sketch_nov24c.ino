@@ -1,3 +1,6 @@
+/*
+  LED複数個でウェーブ
+*/
 #define LED_PIN09 9
 #define LED_PIN10 10
 #define LED_PIN11 11

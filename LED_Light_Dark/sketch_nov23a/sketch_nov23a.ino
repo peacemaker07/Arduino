@@ -1,3 +1,6 @@
+/*
+  LEDがだんだん明るくなる、暗くなる
+*/
 #define LED_PIN9 9
 #define LED_PIN10 10
 

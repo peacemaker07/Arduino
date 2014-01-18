@@ -1,4 +1,4 @@
-// 湿度センサ
+// 湿度センサ【未完成。。。】
 // http://forum.arduino.cc/index.php?topic=143815.0
 
 int analogPin = 0;

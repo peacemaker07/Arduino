@@ -1,3 +1,8 @@
+/*
+  FullColorLED＋ボタン
+    RGBごとにボタンがあり、おすとRGB値がカウントアップ
+*/
+
 int  val_GREEN = 0;
 int  val_RED   = 0;
 int  val_BULE  = 0;

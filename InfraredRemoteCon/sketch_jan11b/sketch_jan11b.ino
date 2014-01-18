@@ -1,3 +1,8 @@
+/*
+  赤外線でエアコンを操作しようとしたけど失敗。。。
+  http://eikatou.net/blog/2012/07/arduino-remocon/
+*/
+
 int ir_out = 2;
 int led = 9;
 

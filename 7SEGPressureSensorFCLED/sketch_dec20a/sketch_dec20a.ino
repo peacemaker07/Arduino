@@ -1,3 +1,7 @@
+/*
+  7SEG＋圧力センサ＋FullColorLED
+*/
+
 int num = 0;
 float R1=5.1,rf,fg;
 int n, char_length;

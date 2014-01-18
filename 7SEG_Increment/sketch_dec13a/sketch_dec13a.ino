@@ -1,3 +1,7 @@
+/*
+  7SEGを1からカウントアップ
+*/
+
 const int anode_pins[] = {12, 8, 5, 3, 2, 11, 6};    // アノードに接続するArduinoのピン
 const int cathode_pins[] = {7, 9, 10, 13};           // カソードに接続するArduinoのピン
 const int number_of_anode_pins = sizeof(anode_pins) / sizeof(anode_pins[0]);

@@ -1,4 +1,4 @@
-// シフトレジスタ
+// シフトレジスタ（2進数でインクリメント）
 // http://arduino.cc/en/Tutorial/ShftOut11
 
 // Pin connected to ST_CP of 74HC595

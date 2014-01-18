@@ -1,3 +1,7 @@
+/*
+  7SEG＋圧電ブザー
+*/
+
 const int anode_pin01 = 2;
 const int anode_pin02 = 3;
 const int anode_pin03 = 4;

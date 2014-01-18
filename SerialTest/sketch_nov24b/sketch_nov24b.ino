@@ -1,3 +1,6 @@
+/*
+  シリアルモニタのテスト
+*/
 #define SENSOR 0
 
 void setup(){

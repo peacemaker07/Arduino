@@ -1,3 +1,7 @@
+/*
+  LCDの表示テスト用
+*/
+
 #include <LiquidCrystal.h>
 
 // reference of http://www.hiramine.com/physicalcomputing/arduino/lcd.html
