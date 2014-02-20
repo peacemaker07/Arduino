@@ -4,12 +4,15 @@
 // Pin connected to ST_CP of 74HC595
 // このPINをHIGHにするとそれまでのデータが出力される
 int latchPin = 8;
+int latchPin2 = 2;
 
 // Pin connected to SH_CP of 74hc595
 int clockPin = 12;
+int clockPin2 = 5;
 
 // Pin connected to DS of 74HC595
 int dataPin = 11;
+int dataPin2 = 4;
 
 int a = 0b00000001;
 
@@ -18,6 +21,10 @@ void setup(){
   pinMode(latchPin, OUTPUT);
   pinMode(clockPin, OUTPUT);
   pinMode(dataPin, OUTPUT);
+
+  pinMode(latchPin2, OUTPUT);
+  pinMode(clockPin2, OUTPUT);
+  pinMode(dataPin2, OUTPUT);
 }
 
 void loop(){
@@ -27,18 +34,23 @@ void loop(){
     // take the latchPin low so
     // the LEDs don't change while you're sending in bits:
     digitalWrite(latchPin, LOW);
+    digitalWrite(latchPin2, LOW);
 
     int aa = a << numberToDisplay;
+//    int aa = 0b11111111;
     int b  = aa >> 8;
     
     // shift out the bits:
 //    shiftOut(dataPin, clockPin, MSBFIRST, numberToDisplay);
     shiftOut(dataPin, clockPin, MSBFIRST, b);    // 上位データを送信
     shiftOut(dataPin, clockPin, MSBFIRST, aa);   // 下位データを送信
+    shiftOut(dataPin2, clockPin2, MSBFIRST, b);    // 上位データを送信
+    shiftOut(dataPin2, clockPin2, MSBFIRST, aa);   // 下位データを送信
     
     // take the latch pin high so the LEDs will light up:
     digitalWrite(latchPin, HIGH);
+    digitalWrite(latchPin2, HIGH);
     // pause before next value:
-    delay(50);
+    delay(1000);
   }
 }
