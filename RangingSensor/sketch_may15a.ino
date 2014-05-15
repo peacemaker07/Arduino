@@ -13,4 +13,9 @@ void loop(){
   ans = analogRead(0);
   Serial.println(ans);
   delay(500);
+  
+  float volts = analogRead(0)*0.0048828125; 
+  float distance = 65 * pow(volts, -1.10);
+  Serial.println(distance);
+  delay(100);
 }
