@@ -1,5 +1,5 @@
 /*
-  距測センサ
+  測距センサ
   http://www.geocities.jp/zattouka/GarageHouse/micon/Arduino/DMSU/DMSU.htm
 */
 
