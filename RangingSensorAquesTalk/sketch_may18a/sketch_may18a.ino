@@ -95,7 +95,7 @@ void loop(){
   // 同時
   if(passflg == 9){
     if(!AquesTalk_IsBusy()){
-      AquesTalk_Synthe("hanarete kudasai.");
+      AquesTalk_Synthe("irassyaimase.");
     }
   }
   // 左→右
@@ -115,7 +115,7 @@ void loop(){
 //  Serial.println("************");
   Serial.println(passflg);
 
-  delay(150);
+//  delay(10);
 }
 
 // 測距センサから取得したvoltsから距離を測定
@@ -140,7 +140,7 @@ int getPass(float d){
   
   ret_pass = 0;
   // 50cm未満になったら遠たとする
-  if(d < 50){
+  if(d < 70){
     ret_pass = 1;
   }
   
